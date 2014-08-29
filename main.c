@@ -15,11 +15,11 @@ void _main(void) {
 	ClrScr();
 
 	// Set up board.
-	//board_init(&board);
-	//DrawStr(134, 8, "move", A_XOR);
-	//DrawStr(134, 18, "exit", A_XOR);
-	//DrawStr(134, 28, "score:", A_XOR);
-	// Play the game.
+	board_init(&board);
+	DrawStr(134, 8, "Arrows move.", A_XOR);
+	DrawStr(134, 18, "ESC exits", A_XOR);
+	DrawStr(134, 28, "Your Score:", A_XOR);
+	//Play the game.
 	while (!(status = board_done(&board))) {
 		// Print the board.
 		board_print(&board);
