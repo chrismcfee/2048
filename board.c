@@ -12,7 +12,7 @@ unsigned short int piece512[] = {};
 unsigned short int piece1024[] = {};
 unsigned short int piece2048[] = {}; */
 
-//static
+static
 unsigned long int piece0[] = {0xFFFFFFFF,0xC0000003,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0xC0000003,0xFFFFFFFF};
 char scorestr[10];
 char curpiece[6];
@@ -434,7 +434,7 @@ int board_shift_right(struct board* board) {
 	return valid;
 }
 
-//void score_clear() {
+void score_clear() {
 	score = 0;
 	sprintf(scorestr, "%d", score);
 }
