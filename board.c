@@ -1,19 +1,33 @@
 #include "board.h"
 
-/*unsigned short int piece2[] = {};
-unsigned short int piece4[] = {};
-unsigned short int piece8[] = {};
-unsigned short int piece16[] = {};
-unsigned short int piece32[] = {};
-unsigned short int piece64[] = {};
-unsigned short int piece128[] = {};
-unsigned short int piece256[] = {};
-unsigned short int piece512[] = {};
-unsigned short int piece1024[] = {};
-unsigned short int piece2048[] = {}; */
+/*
+Copyright 2014 by Christopher J. McFee
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
-static
-unsigned long int piece0[] = {0xFFFFFFFF,0xC0000003,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0xC0000003,0xFFFFFFFF};
+//unsigned short int piece2[] = {};
+
+//unsigned short int piece4[] = {};
+//unsigned short int piece8[] = {};
+//unsigned short int piece16[] = {};
+//unsigned short int piece32[] = {};
+//unsigned short int piece64[] = {};
+//unsigned short int piece128[] = {};
+//unsigned short int piece256[] = {};
+//unsigned short int piece512[] = {};
+//unsigned short int piece1024[] = {};
+//unsigned short int piece2048[] = {}; */
+
+static unsigned long int piece0[] = {0xFFFFFFFF,0xC0000003,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0xC0000003,0xFFFFFFFF};
 char scorestr[10];
 char curpiece[6];
 unsigned int curpieceint;
