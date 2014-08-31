@@ -35,13 +35,15 @@ struct board {
 int board_done(struct board* board);
 unsigned board_get_tiles_empty(struct board* board);
 
-//function descriptions:
+/*
+function descriptions:
 //init initializes board
 //merge merges tiles in the board in a specific direction
 //move processes the move request and evaluates; 
 //plop spawns a new tile
 //shift shifts the tiles in a certain direction
-//print is the function to show the board itself
+print is the function to show the board itself
+*/
 
 void board_init(struct board* board);
 int board_merge_down(struct board* board);
@@ -61,4 +63,4 @@ int board_shift_up(struct board* board);
 
 void score_clear();
 
-#endif // board_H
+#endif
