@@ -7,7 +7,7 @@ Tested with the TI-83 Plus.
 
 Use a link cable or USB cable if you have a higher end model after compiling to load this to your calculator's memory.
 
-Alternatively, an emulator such as Tilemu can be used to compile, assmeble, and link this program.
+Alternatively, an emulator such as Tilemu can be used to compile, link, and assemble this program.
 
 Here is the Tilemu download page/source code link:
 
