@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 void _main(void) {
 	struct board board;
-	int status; // Game status.
+	int status;
 	int valid;
 	int key;
 	randomize();
