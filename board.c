@@ -14,19 +14,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//unsigned short int piece2[] = {};
-
-//unsigned short int piece4[] = {};
-//unsigned short int piece8[] = {};
-//unsigned short int piece16[] = {};
-//unsigned short int piece32[] = {};
-//unsigned short int piece64[] = {};
-//unsigned short int piece128[] = {};
-//unsigned short int piece256[] = {};
-//unsigned short int piece512[] = {};
-//unsigned short int piece1024[] = {};
-//unsigned short int piece2048[] = {}; */
-
 static unsigned long int piece0[] = {0xFFFFFFFF,0xC0000003,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0x80000001,0xC0000003,0xFFFFFFFF};
 char scorestr[10];
 char curpiece[6];
@@ -268,6 +255,11 @@ int board_merge_up(struct board* board) {
 	return merge;
 }
 
+int board_move_up(struct board* board) {
+	char a = board_merge_up(board);
+	return a | board_shift_up(board);
+}
+
 int board_move_down(struct board* board) {
 	char a = board_merge_down(board);
 	return a | board_shift_down(board);
@@ -283,11 +275,6 @@ int board_move_right(struct board* board) {
 	return a | board_shift_right(board);
 }
 
-int board_move_up(struct board* board) {
-	char a = board_merge_up(board);
-	return a | board_shift_up(board);
-}
-
 void board_plop(struct board* board) {
 	int i;
 	int j;
@@ -300,7 +287,7 @@ void board_plop(struct board* board) {
 	// Choose a random tile to palce the value into.
 	target = random(100) % tiles_empty;
 
-	// Place the value into the tile. Implemented poorly.
+	// Place the value into the tile. This part barely works to be honest.
 	tiles_empty = 0;
 	for (i = 0; i < BOARD_ROWS; i++) {
 		for (j = 0; j < BOARD_COLUMNS; j++) {
