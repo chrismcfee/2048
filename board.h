@@ -2,7 +2,7 @@
 #define board_H
 
 /*
- * Copyright 2014 by Christopher J. McFee
+Copyright 2014 by Christopher J. McFee
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -35,6 +35,7 @@ struct board {
 int board_done(struct board* board);
 unsigned board_get_tiles_empty(struct board* board);
 
+//function descriptions:
 //init initializes board
 //merge merges tiles in the board in a specific direction
 //move processes the move request and evaluates; 
