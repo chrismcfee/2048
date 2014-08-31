@@ -9,16 +9,20 @@ Use a link cable or USB cable if you have a higher end model after compiling to 
 
 Alternatively, an emulator such as TIEMU can be used to compile, assmeble, and link this program.
 
-Here is the Tilemu download page/source code link.
+Here is the Tilemu download page/source code link:
+
 http://lpg.ticalc.org/prj_tilem/download.html
 
 A PKGBUILD for this program also exists on the AUR here:
+
 https://aur.archlinux.org/packages/tilem/
 
 These libraries are required to build this software:
+
 http://lpg.ticalc.org/prj_tilp/linux.html
 
 A PKGBUILD for these libraries can also be found on the AUR:
+
 https://aur.archlinux.org/packages/tilp/
 
 Depending on your system, you may have to compile some of the cable headers and calc files from the ticalc website from source.
@@ -28,10 +32,18 @@ You can load this program onto your calculator's memory (or using an emulator) b
 If you are not familiar with this tool, read the documentation wiki.
 
 The z88dk documentation can be found here:
+
 http://www.z88dk.org/wiki/doku.php
 
-Good page to read referencing the same libraries I have used to build this program:
+______________________________________________________________________________________
+
+IMPORTANT:
+
+Page to read referencing the same libraries I have used to build this program:
+
 http://www.z88dk.org/wiki/doku.php?id=platform:ticalc&s[]=ti&s[]=83
+
 (This is of course how you will determine the Makefile that you use; it is completely dependent on the model of the calculator you own).
+______________________________________________________________________________________
 
 Have fun, but don't play too much during math class! :D
