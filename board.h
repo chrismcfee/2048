@@ -46,10 +46,10 @@ print is the function to show the board itself
 */
 
 void board_init(struct board* board);
+int board_merge_up(struct board* board);
 int board_merge_down(struct board* board);
 int board_merge_left(struct board* board);
 int board_merge_right(struct board* board);
-int board_merge_up(struct board* board);
 int board_move_down(struct board* board);
 int board_move_left(struct board* board);
 int board_move_right(struct board* board);
