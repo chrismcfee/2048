@@ -21,9 +21,13 @@ These libraries are required to build this software:
 
 http://lpg.ticalc.org/prj_tilp/linux.html
 
-A PKGBUILD for these libraries can also be found on the AUR:
+PKGBUILDs for these libraries can also be found on the AUR:
 
+https://aur.archlinux.org/packages/libticalcs/
 https://aur.archlinux.org/packages/tilp/
+https://aur.archlinux.org/packages/libticables/
+https://aur.archlinux.org/packages/libtifiles/
+https://aur.archlinux.org/packages/libticonv/
 
 Depending on your system, you may have to compile some of the cable headers and calc files from the ticalc website from source.
 
