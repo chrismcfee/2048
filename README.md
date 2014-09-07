@@ -51,7 +51,7 @@ Page to read referencing the same libraries I have used to build this program:
 
 http://www.z88dk.org/wiki/doku.php?id=platform:ticalc&s[]=ti&s[]=83
 
-This tutorial is also helpful if you have a TI-84:
+This tutorial is also helpful if you have a TI-84, as the above tutorial does not include an example Makefile for the TI-84 models:
 
 http://ti-84-plus.com/blog/ti-84-plus-compile-and-run-an-hello-world-c-program/
 
