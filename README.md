@@ -51,6 +51,10 @@ Page to read referencing the same libraries I have used to build this program:
 
 http://www.z88dk.org/wiki/doku.php?id=platform:ticalc&s[]=ti&s[]=83
 
+This tutorial is also helpful if you have a TI-84:
+
+http://ti-84-plus.com/blog/ti-84-plus-compile-and-run-an-hello-world-c-program/
+
 (This is of course how you will determine the Makefile that you use; it is completely dependent on the model of the calculator you own).
 ______________________________________________________________________________________
 
